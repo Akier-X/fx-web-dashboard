@@ -3,6 +3,7 @@
 **リアルタイムFX取引監視ダッシュボード**
 
 [![Python](https://img.shields.io/badge/Python-3.9%2B-blue)](https://www.python.org/)
+[![Dashboard Validation](https://github.com/Akier-X/fx-web-dashboard/actions/workflows/dashboard-validation.yml/badge.svg)](https://github.com/Akier-X/fx-web-dashboard/actions/workflows/dashboard-validation.yml)
 [![Flask](https://img.shields.io/badge/Flask-3.0%2B-green)](https://flask.palletsprojects.com/)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
