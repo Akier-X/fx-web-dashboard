@@ -154,13 +154,13 @@ jobs:
         cat dashboard_report.md
 
     - name: Upload dashboard report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dashboard-report
         path: dashboard_report.md
 
     - name: Upload test chart
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: test-chart
         path: test_chart.png
@@ -174,19 +174,19 @@ jobs:
         python .github/scripts/generate_evaluation.py
 
     - name: Upload evaluation graphs
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dashboard-evaluation-graphs
         path: evaluation_output/dashboard_metrics.png
 
     - name: Upload evaluation summary
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dashboard-evaluation-summary
         path: evaluation_output/dashboard_summary.json
 
     - name: Upload evaluation report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: dashboard-evaluation-report
         path: evaluation_output/DASHBOARD_EVALUATION_REPORT.md
