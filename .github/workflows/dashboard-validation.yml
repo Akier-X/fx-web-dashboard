@@ -164,3 +164,29 @@ jobs:
       with:
         name: test-chart
         path: test_chart.png
+
+    - name: Install evaluation dependencies
+      run: |
+        pip install matplotlib numpy
+
+    - name: Generate comprehensive evaluation
+      run: |
+        python .github/scripts/generate_evaluation.py
+
+    - name: Upload evaluation graphs
+      uses: actions/upload-artifact@v3
+      with:
+        name: dashboard-evaluation-graphs
+        path: evaluation_output/dashboard_metrics.png
+
+    - name: Upload evaluation summary
+      uses: actions/upload-artifact@v3
+      with:
+        name: dashboard-evaluation-summary
+        path: evaluation_output/dashboard_summary.json
+
+    - name: Upload evaluation report
+      uses: actions/upload-artifact@v3
+      with:
+        name: dashboard-evaluation-report
+        path: evaluation_output/DASHBOARD_EVALUATION_REPORT.md
